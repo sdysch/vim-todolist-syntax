@@ -4,6 +4,9 @@ if exists("b:current_syntax")
   finish
 endif
 
+
+setlocal formatoptions+=ro
+
 syn region section start='<' end='>'
 
 syn match comment      "#.*$"
