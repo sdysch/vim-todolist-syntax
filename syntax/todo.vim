@@ -8,6 +8,7 @@ endif
 setlocal formatoptions+=ro
 
 syn region section start='<' end='>'
+syn region string  start='"' end='"'
 
 syn match comment      "#.*$"
 syn match general      "\*.*$"
@@ -19,5 +20,6 @@ highlight link general          ModeMsg
 highlight link urgent           Statement
 highlight link important        Identifier
 highlight link section          Tag
+highlight link string           String
 
 let b:current_syntax = "todo"
